@@ -68,6 +68,15 @@ Windows Registry Editor Version 5.00
 [-HKEY_CLASSES_ROOT\SystemFileAssociations\Directory.Image\shell\Play]
 [-HKEY_CLASSES_ROOT\SystemFileAssociations\Directory.Video\shell\Enqueue]
 [-HKEY_CLASSES_ROOT\SystemFileAssociations\Directory.Video\shell\Play]
+[-HKEY_CLASSES_ROOT\SystemFileAssociations\.mkv\shellex\ContextMenuHandlers\PlayTo]
+[-HKEY_CLASSES_ROOT\SystemFileAssociations\.mp4\shellex\ContextMenuHandlers\PlayTo]
+[-HKEY_CLASSES_ROOT\SystemFileAssociations\.mp4v\shellex\ContextMenuHandlers\PlayTo]
+[-HKEY_CLASSES_ROOT\SystemFileAssociations\.ts\shellex\ContextMenuHandlers\PlayTo]
+[-HKEY_CLASSES_ROOT\SystemFileAssociations\.mov\shellex\ContextMenuHandlers\PlayTo]
+[-HKEY_CLASSES_ROOT\SystemFileAssociations\.aac\shellex\ContextMenuHandlers\PlayTo]
+[-HKEY_CLASSES_ROOT\SystemFileAssociations\.flac\shellex\ContextMenuHandlers\PlayTo]
+[-HKEY_CLASSES_ROOT\SystemFileAssociations\.m4a\shellex\ContextMenuHandlers\PlayTo]
+[-HKEY_CLASSES_ROOT\SystemFileAssociations\.m4v\shellex\ContextMenuHandlers\PlayTo]
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Shell Extensions\Blocked]
 ; Windows Photo Viewer Image Verbs
@@ -100,3 +109,12 @@ Windows Registry Editor Version 5.00
 ; https://docs.microsoft.com/en-us/troubleshoot/windows-client/deployment/system-registry-no-backed-up-regback-folder
 [HKLM\System\CurrentControlSet\Control\Session Manager\Configuration Manager]
 "EnablePeriodicBackup"=dword:00000001
+
+; https://winaero.com/add-customize-tab-desktop-folder-windows-10/
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FolderDescriptions\{B4BFCC3A-DB2C-424C-B029-7FE99A87C641}\PropertyBag]
+"NoCustomize"=dword:00000000
+
+; Fix .URL files not opening in browser if IE is uninstalled
+; https://twitter.com/Aldaviva/status/1373205666207133696
+; After doing this, you may have to fix .URL icons by going to the Properties dialog of a URL file and choosing Opens With › Internet Browser.
+[-HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.url\UserChoice]
