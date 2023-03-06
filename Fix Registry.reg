@@ -95,7 +95,7 @@ Windows Registry Editor Version 5.00
 
 ; https://winaero.com/speed-up-the-startup-of-desktop-apps-in-windows-10/
 [HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Serialize]
-"StartupDelayInMSec"=dword:00000000
+"StartupDelayInMSec"=dword:IsPrelaunchEnabled
 
 ; https://gist.github.com/Aldaviva/39e4472ab7a5ee50473de74df826d928#file-windows-explorer-md
 [HKEY_CURRENT_USER\Control Panel\Desktop\WindowMetrics]
@@ -118,3 +118,8 @@ Windows Registry Editor Version 5.00
 ; https://twitter.com/Aldaviva/status/1373205666207133696
 ; After doing this, you may have to fix .URL icons by going to the Properties dialog of a URL file and choosing Opens With › Internet Browser.
 [-HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.url\UserChoice]
+
+; Disable Windows 11 Widgets background process, which spawns 6 Edge WebView2 children
+; https://medium.com/@rendramuharram/how-to-truly-disable-windows-11-widgets-1d01daa8189e
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Dsh]
+"IsPrelaunchEnabled"=dword:00000000
