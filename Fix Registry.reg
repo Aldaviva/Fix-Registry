@@ -126,3 +126,9 @@ Windows Registry Editor Version 5.00
 
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\FileSystem]
 "LongPathsEnabled"=dword:00000001
+
+; Rely only on NTP to set system clock, and don't randomly set it based on TLS responses (maybe Server-only)
+; https://arstechnica.com/security/2023/08/windows-feature-that-resets-system-clocks-based-on-random-data-is-wreaking-havoc/
+; https://learn.microsoft.com/en-us/windows-server/networking/windows-time-service/windows-server-2016-improvements#secure-time-seeding
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\w32time\Config]
+"UtilizeSslTimeData"=dword:00000000
