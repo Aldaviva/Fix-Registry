@@ -8,6 +8,7 @@ Windows Registry Editor Version 5.00
 [-HKEY_CLASSES_ROOT\*\shellex\ContextMenuHandlers\Sharing]
 [-HKEY_CLASSES_ROOT\*\shellex\ContextMenuHandlers\ModernSharing]
 [-HKEY_CLASSES_ROOT\*\shell\RunAs]
+[-HKEY_CLASSES_ROOT\*\shell\Open with CLion]
 
 [-HKEY_CLASSES_ROOT\AllFilesystemObjects\shellex\ContextMenuHandlers\SendTo]
 ; Start menu pin
@@ -40,6 +41,7 @@ Windows Registry Editor Version 5.00
 [-HKEY_CLASSES_ROOT\Directory\Background\shell\AnyCode]
 [-HKEY_CLASSES_ROOT\Directory\shell\Bridge]
 [-HKEY_CLASSES_ROOT\Directory\shell\Bridge 12]
+[-HKEY_CLASSES_ROOT\Directory\shell\Bridge 14]
 [-HKEY_CLASSES_ROOT\Directory\shellex\ContextMenuHandlers\Sharing]
 [-HKEY_CLASSES_ROOT\Directory\Background\shellex\ContextMenuHandlers\Sharing]
 ; Restore previous versions
@@ -156,11 +158,6 @@ Windows Registry Editor Version 5.00
 ; https://twitter.com/Aldaviva/status/1373205666207133696
 ; After doing this, you may have to fix .URL icons by going to the Properties dialog of a URL file and choosing Opens With › Internet Browser.
 [-HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.url\UserChoice]
-
-; Disable Windows 11 Widgets background process, which spawns 6 Edge WebView2 children
-; https://medium.com/@rendramuharram/how-to-truly-disable-windows-11-widgets-1d01daa8189e
-[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Dsh]
-"IsPrelaunchEnabled"=dword:00000000
 
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\FileSystem]
 "LongPathsEnabled"=dword:00000001
