@@ -92,8 +92,9 @@ Windows Registry Editor Version 5.00
 ; Hide Libraries, Music, Downloads, Photos, and other folders from Desktop and Explorer sidebar
 
 ; WARNING: Renaming the {031E4825-7B94-4dc3-B131-E946B44C8DD5} key will prevent the Microsoft Photos app from adding/browsing/importing into local folders.
-; If you use Microsoft Photos, comment out the following changes to {031E4825-7B94-4dc3-B131-E946B44C8DD5}
-; If you don't use Microsoft Photos, leave them uncommented to hide the Libraries icon from the Desktop
+; It also causes the new Windows Media Player (Microsoft.Music.Player.exe, ‌Microsoft.ZuneMusic‌) to crash on startup.
+; If you use Microsoft Photos or new Windows Media Player, comment out the following changes to {031E4825-7B94-4dc3-B131-E946B44C8DD5}
+; If you don't use Microsoft Photos or new Windows Media Player, leave them uncommented to hide the Libraries icon from the Desktop
 [-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Desktop\NameSpace\{031E4825-7B94-4dc3-B131-E946B44C8DD5}]
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Desktop\NameSpace\_{031E4825-7B94-4dc3-B131-E946B44C8DD5}]
 @="UsersLibraries"
