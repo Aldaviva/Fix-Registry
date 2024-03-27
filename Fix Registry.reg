@@ -172,3 +172,8 @@ Windows Registry Editor Version 5.00
 ; https://learn.microsoft.com/en-us/windows-server/networking/windows-time-service/windows-server-2016-improvements#secure-time-seeding
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\w32time\Config]
 "UtilizeSslTimeData"=dword:00000000
+
+; Stop screen readers (like any program that uses UI Automation) from disabling PSReadLine in PowerShell
+; https://github.com/PowerShell/PowerShell/issues/11751#issuecomment-605600654
+[HKEY_CURRENT_USER\Control Panel\Accessibility\Blind Access]
+"On"="0"
