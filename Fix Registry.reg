@@ -90,46 +90,55 @@ Windows Registry Editor Version 5.00
 [-HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Desktop\NameSpace\{0E270DAA-1BE6-48F2-AC49-CF1DCC1BA6B0}]
 
 ; Hide Libraries, Music, Downloads, Photos, and other folders from Desktop and Explorer sidebar
-
-; WARNING: Renaming the {031E4825-7B94-4dc3-B131-E946B44C8DD5} key will prevent the Microsoft Photos app from adding/browsing/importing into local folders.
+; WARNING: Renaming the {031E4825-7B94-4dc3-B131-E946B44C8DD5} Library key will prevent the Microsoft Photos app from adding/browsing/importing into local folders.
 ; It also causes the new Windows Media Player (Microsoft.Music.Player.exe, ‌Microsoft.ZuneMusic‌) to crash on startup.
 ; If you use Microsoft Photos or new Windows Media Player, comment out the following changes to {031E4825-7B94-4dc3-B131-E946B44C8DD5}
 ; If you don't use Microsoft Photos or new Windows Media Player, leave them uncommented to hide the Libraries icon from the Desktop
+
+; Libraries
 [-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Desktop\NameSpace\{031E4825-7B94-4dc3-B131-E946B44C8DD5}]
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Desktop\NameSpace\_{031E4825-7B94-4dc3-B131-E946B44C8DD5}]
 @="UsersLibraries"
 "Removal Message"="@shell32.dll,-9047"
 
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Desktop\NameSpace_36354489\{1CF1260C-4DD0-4ebb-811F-33C572699FDE}]
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Desktop\NameSpace_36354489\_{1CF1260C-4DD0-4ebb-811F-33C572699FDE}]
+; Music
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Desktop\NameSpace\{1CF1260C-4DD0-4ebb-811F-33C572699FDE}]
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Desktop\NameSpace\_{1CF1260C-4DD0-4ebb-811F-33C572699FDE}]
 @="CLSID_ThisPCMyMusicRegFolder"
 
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Desktop\NameSpace_36354489\{374DE290-123F-4565-9164-39C4925E467B}]
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Desktop\NameSpace_36354489\_{374DE290-123F-4565-9164-39C4925E467B}]
+; Downloads
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Desktop\NameSpace\{374DE290-123F-4565-9164-39C4925E467B}]
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Desktop\NameSpace\_{374DE290-123F-4565-9164-39C4925E467B}]
 @="CLSID_ThisPCDownloadsRegFolder"
 
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Desktop\NameSpace_36354489\{3ADD1653-EB32-4cb0-BBD7-DFA0ABB5ACCA}]
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Desktop\NameSpace_36354489\_{3ADD1653-EB32-4cb0-BBD7-DFA0ABB5ACCA}]
+; Photos
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Desktop\NameSpace\{3ADD1653-EB32-4cb0-BBD7-DFA0ABB5ACCA}]
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Desktop\NameSpace\_{3ADD1653-EB32-4cb0-BBD7-DFA0ABB5ACCA}]
 @="CLSID_ThisPCMyPicturesRegFolder"
 
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Desktop\NameSpace_36354489\{A0953C92-50DC-43bf-BE83-3742FED03C9C}]
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Desktop\NameSpace_36354489\_{A0953C92-50DC-43bf-BE83-3742FED03C9C}]
+; Videos
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Desktop\NameSpace\{A0953C92-50DC-43bf-BE83-3742FED03C9C}]
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Desktop\NameSpace\_{A0953C92-50DC-43bf-BE83-3742FED03C9C}]
 @="CLSID_ThisPCMyVideosRegFolder"
 
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Desktop\NameSpace_36354489\{A8CDFF1C-4878-43be-B5FD-F8091C1C60D0}]
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Desktop\NameSpace_36354489\_{A8CDFF1C-4878-43be-B5FD-F8091C1C60D0}]
+; Documents
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Desktop\NameSpace\{A8CDFF1C-4878-43be-B5FD-F8091C1C60D0}]
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Desktop\NameSpace\_{A8CDFF1C-4878-43be-B5FD-F8091C1C60D0}]
 @="CLSID_ThisPCDocumentsRegFolder"
 
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Desktop\NameSpace_36354489\{B4BFCC3A-DB2C-424C-B029-7FE99A87C641}]
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Desktop\NameSpace_36354489\_{B4BFCC3A-DB2C-424C-B029-7FE99A87C641}]
+; Desktop
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Desktop\NameSpace\{B4BFCC3A-DB2C-424C-B029-7FE99A87C641}]
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Desktop\NameSpace\_{B4BFCC3A-DB2C-424C-B029-7FE99A87C641}]
 @="CLSID_ThisPCDesktopRegFolder"
 
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Desktop\NameSpace_36354489\{f874310e-b6b7-47dc-bc84-b9e6b38f5903}]
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Desktop\NameSpace_36354489\_{f874310e-b6b7-47dc-bc84-b9e6b38f5903}]
+; Home
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Desktop\NameSpace\{f874310e-b6b7-47dc-bc84-b9e6b38f5903}]
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Desktop\NameSpace\_{f874310e-b6b7-47dc-bc84-b9e6b38f5903}]
 @="CLSID_MSGraphHomeFolder"
 
-[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Desktop\NameSpace_41040327\{e88865ea-0e1c-4e20-9aa6-edcd0212c87c}]
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Desktop\NameSpace_41040327\_{e88865ea-0e1c-4e20-9aa6-edcd0212c87c}]
+; Gallery
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Desktop\NameSpace\{e88865ea-0e1c-4e20-9aa6-edcd0212c87c}]
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Desktop\NameSpace\_{e88865ea-0e1c-4e20-9aa6-edcd0212c87c}]
 @="_{e88865ea-0e1c-4e20-9aa6-edcd0212c87c}"
 
 ; https://www.bleepingcomputer.com/news/security/microsoft-code-sign-check-bypassed-to-drop-zloader-malware/
