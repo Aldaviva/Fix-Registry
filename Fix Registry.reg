@@ -42,6 +42,7 @@
 [-HKEY_CLASSES_ROOT\Directory\shell\Bridge]
 [-HKEY_CLASSES_ROOT\Directory\shell\Bridge 12]
 [-HKEY_CLASSES_ROOT\Directory\shell\Bridge 14]
+[-HKEY_CLASSES_ROOT\Directory\shell\Bridge 15]
 [-HKEY_CLASSES_ROOT\Directory\shellex\ContextMenuHandlers\Sharing]
 [-HKEY_CLASSES_ROOT\Directory\Background\shellex\ContextMenuHandlers\Sharing]
 ; Restore previous versions
@@ -91,7 +92,7 @@
 
 ; Hide Libraries, Music, Downloads, Photos, and other folders from Desktop and Explorer sidebar
 ; WARNING: Renaming the {031E4825-7B94-4dc3-B131-E946B44C8DD5} Library key will prevent the Microsoft Photos app from adding/browsing/importing into local folders.
-; It also causes the new Windows Media Player (Microsoft.Music.Player.exe, ‌Microsoft.ZuneMusic‌) to crash on startup.
+; It also causes the new Windows Media Player (Microsoft.Music.Player.exe, Microsoft.ZuneMusic) to crash on startup.
 ; If you use Microsoft Photos or new Windows Media Player, comment out the following changes to {031E4825-7B94-4dc3-B131-E946B44C8DD5}
 ; If you don't use Microsoft Photos or new Windows Media Player, leave them uncommented to hide the Libraries icon from the Desktop
 
