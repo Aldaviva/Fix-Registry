@@ -43,6 +43,7 @@
 [-HKEY_CLASSES_ROOT\Directory\shell\Bridge 12]
 [-HKEY_CLASSES_ROOT\Directory\shell\Bridge 14]
 [-HKEY_CLASSES_ROOT\Directory\shell\Bridge 15]
+[-HKEY_CLASSES_ROOT\Directory\shell\Bridge 16]
 [-HKEY_CLASSES_ROOT\Directory\shellex\ContextMenuHandlers\Sharing]
 [-HKEY_CLASSES_ROOT\Directory\Background\shellex\ContextMenuHandlers\Sharing]
 ; Restore previous versions
